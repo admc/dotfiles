@@ -19,15 +19,15 @@ set pastetoggle=<F8>
 " Line numbahs ...
 set nu
 " Use actual tabs, ugh
-set noet
+set et
 " Indent 2 spaces
-set ts=2
-set sw=2
+set ts=4
+set sw=4
 
 " Jump to matching brackets
 " set sm
 " Auto-indent
-set ai
+set noai
 
 " @ will reformat the current paragraph
 map @ !} fmt -w 65
@@ -56,3 +56,5 @@ endfunction
 " autocmd BufReadPost * call DetectTabs()
 
 colorscheme tango
+set hls
+set incsearch
