@@ -1,5 +1,6 @@
 syntax on
-set background=dark
+set t_Co=256
+colorscheme jellybeans
 
 " Highlight redundant whitespaces.
 highlight RedundantSpaces ctermbg=blue guibg=blue
@@ -21,8 +22,8 @@ set nu
 " Use actual tabs, ugh
 set et
 " Indent 2 spaces
-set ts=4
-set sw=4
+set ts=2
+set sw=2
 
 " Jump to matching brackets
 " set sm
@@ -39,13 +40,6 @@ map <C-K> :tabn<CR>
 :abbr #b /*------------------------------------------------
 :abbr #e -----------------------------------------------*/
 
-cabbr jslint !runjslint "`cat %`" \
-  \| lynx --force-html /dev/fd/5 -dump 5<&0 \| less
-
-" HTML syntax for .ejs template files
-au BufRead,BufNewFile *.ejs    set filetype=html
-" HTML syntax for .ejs template files
-au BufRead,BufNewFile *.as    set filetype=javascript
 
 " Try to autodetect tab-based indentation and go with the flow
 function DetectTabs()
@@ -55,6 +49,5 @@ function DetectTabs()
 endfunction
 " autocmd BufReadPost * call DetectTabs()
 
-colorscheme tango
 set hls
 set incsearch
