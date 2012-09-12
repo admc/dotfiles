@@ -1,6 +1,7 @@
 syntax on
 set t_Co=256
 colorscheme jellybeans
+let g:Powerline_symbols = 'unicode'
 
 " Highlight redundant whitespaces.
 highlight RedundantSpaces ctermbg=blue guibg=blue
