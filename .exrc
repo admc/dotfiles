@@ -37,6 +37,7 @@ map @ !} fmt -w 65
 " Cycle through the tabs
 map <C-J> :tabp<CR>
 map <C-K> :tabn<CR>
+map <C-T> :CommandT<CR>
 
 :abbr #b /*------------------------------------------------
 :abbr #e -----------------------------------------------*/
